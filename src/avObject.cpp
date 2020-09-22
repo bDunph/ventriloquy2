@@ -672,7 +672,7 @@ double * avObject::audio(float blur){
         bassEnv[i].setSustain(20 + (10 * i));
         bassEnv[i].setRelease(70 + (10 * i));
         bass[i] = bassOsc[i].saw((oscilFreq * 0.1) + (3 * i));
-        envelopedBassSig[i] = bassEnv[i].adsr(1., 1);
+        envelopedBassSig[i] = bass[i] * bassEnv[i].adsr(1., 1);
         bassSig += envelopedBassSig[i];
     }
     bassSig *= 0.05;

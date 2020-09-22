@@ -1,0 +1,21 @@
+<group>
+	<pole1Freq0>373</pole1Freq0>
+	<pole2Freq0>1962</pole2Freq0>
+	<pole3Freq0>2952</pole3Freq0>
+	<pole4Freq0>3908</pole4Freq0>
+	<pole1res0>1</pole1res0>
+	<pole2res0>2.78461</pole2res0>
+	<pole3res0>3.4686</pole3res0>
+	<pole4res0>2.87806</pole4res0>
+	<a10>1243</a10>
+	<d10>77</d10>
+	<s10>98</s10>
+	<rel10>1794</rel10>
+	<a20>2931</a20>
+	<d20>400</d20>
+	<s20>76</s20>
+	<rel20>2062</rel20>
+	<subEnv1CV0>76</subEnv1CV0>
+	<subEnv2CV0>23</subEnv2CV0>
+<group/>
+</group>

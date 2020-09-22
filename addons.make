@@ -1,0 +1,9 @@
+ofxOpenCv
+ofxCv
+ofxGui
+ofxMaxim
+ofxMidi
+ofxOsc
+ofxRapidLib
+ofxSyphon
+ofxXmlSettings

@@ -1,0 +1,35 @@
+<group>
+	<xTrans>0</xTrans>
+	<yTrans>0</yTrans>
+	<zTrans>0.0543959</zTrans>
+	<noiseSpeed>4744</noiseSpeed>
+	<dispH>8.79603</dispH>
+	<visPulse>57.2898</visPulse>
+	<size0>998</size0>
+	<vertices0>5</vertices0>
+	<texColR0>0</texColR0>
+	<texColG0>0</texColG0>
+	<texColB0>0</texColB0>
+	<texColA0>0</texColA0>
+	<brightness0>0.75</brightness0>
+	<waveform0>0</waveform0>
+	<oscilFreq0>2280</oscilFreq0>
+	<oscilAmp0>0.544047</oscilAmp0>
+	<FM0>1</FM0>
+	<lfoOn0>1</lfoOn0>
+	<lfoFreq0>32.2609</lfoFreq0>
+	<harmRatio0>42</harmRatio0>
+	<modInd0>0.454037</modInd0>
+	<controlVoltage0>46</controlVoltage0>
+	<pulseDuty0>0.93183</pulseDuty0>
+	<noisefiltLowCut0>0.257965</noisefiltLowCut0>
+	<noiseFiltHiCut0>0.799485</noiseFiltHiCut0>
+	<cf0>753.435</cf0>
+	<q0>45</q0>
+	<res0>4.36859</res0>
+	<attack0>1627</attack0>
+	<decay0>469</decay0>
+	<sustain0>255</sustain0>
+	<release0>1801</release0>
+<group/>
+</group>

@@ -1,0 +1,1729 @@
+{
+	"metadata" : 
+	{
+		"creator" : "Rapid API C++",
+		"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+		"numInputs" : 3,
+		"numOutputs" : 39,
+		"version" : "v0.1.1"
+	},
+	"modelSet" : 
+	[
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 1.2446588191636325,
+					"Node 2" : 0.7098314510849516,
+					"Node 3" : -1.4276135637826293,
+					"Threshold" : -0.50256979081076625,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -2.1906302529777579,
+					"Attrib inputs-2" : 1.7078279053164054,
+					"Attrib inputs-3" : 1.5773370359253187,
+					"Threshold" : 0.29193552832360292,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.18921762425504959,
+					"Attrib inputs-2" : -0.066323632663560311,
+					"Attrib inputs-3" : 1.501142408483727,
+					"Threshold" : -0.37404939261358483,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 1.7307957550281017,
+					"Attrib inputs-2" : 1.1018068267697763,
+					"Attrib inputs-3" : -0.5373688008269103,
+					"Threshold" : -1.9765235252567226,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 5778,
+			"outRange" : 3592,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 1.2570708717372456,
+					"Node 2" : 2.2016971101859353,
+					"Node 3" : -0.58742715216822872,
+					"Threshold" : -0.83574832315626535,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.74064193793457511,
+					"Attrib inputs-2" : 2.1358551842683395,
+					"Attrib inputs-3" : -1.4735315690337949,
+					"Threshold" : -0.82410427366277683,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 1.0104739341681412,
+					"Attrib inputs-2" : -1.1113869114943071,
+					"Attrib inputs-3" : 3.603235734259802,
+					"Threshold" : -1.6381081047208086,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 0.37388903217588521,
+					"Attrib inputs-2" : -1.7072774654978453,
+					"Attrib inputs-3" : 0.26148047756902942,
+					"Threshold" : -0.88108936197184595,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 50.700849533081055,
+			"outRange" : 36.678949356079102,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : -0.074966815341131393,
+					"Node 2" : 2.8157307116544761,
+					"Node 3" : -1.7108563393327754,
+					"Threshold" : -0.66427128569555471,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.40285713431191145,
+					"Attrib inputs-2" : -0.025233492566145349,
+					"Attrib inputs-3" : -2.6949095210914455,
+					"Threshold" : -2.7672712034802145,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.18179712181402746,
+					"Attrib inputs-2" : -0.48586287896696201,
+					"Attrib inputs-3" : -6.3736784061925258,
+					"Threshold" : -1.7443975641475775,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : -0.26253096693457706,
+					"Attrib inputs-2" : 0.082157879443629386,
+					"Attrib inputs-3" : -1.5801264751893991,
+					"Threshold" : -0.6355199479537581,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 483.76800537109375,
+			"outRange" : 453.76800537109375,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : -0.65756521049861549,
+					"Node 2" : 1.9882650626572966,
+					"Node 3" : -0.76291127877524134,
+					"Threshold" : -0.36246358186990779,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.85717490435141142,
+					"Attrib inputs-2" : -0.092487334673056226,
+					"Attrib inputs-3" : -0.46035033297050759,
+					"Threshold" : -1.1508853722177628,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 1.8594964679945489,
+					"Attrib inputs-2" : -1.443586941764984,
+					"Attrib inputs-3" : 1.7382311180231995,
+					"Threshold" : 0.66584376858342087,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : -0.69781372645673734,
+					"Attrib inputs-2" : 0.11106726142870836,
+					"Attrib inputs-3" : -0.81637064398011161,
+					"Threshold" : -0.95006194893257601,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 560,
+			"outRange" : 466,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : -0.720899234380322,
+					"Node 2" : 1.8124094976827383,
+					"Node 3" : -1.0153144177239246,
+					"Threshold" : -0.28851464752390021,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.65571781930749906,
+					"Attrib inputs-2" : -0.55161293688946611,
+					"Attrib inputs-3" : 0.50129950613570162,
+					"Threshold" : -0.96185323417571611,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.24162781239608302,
+					"Attrib inputs-2" : -4.8166722417949099,
+					"Attrib inputs-3" : -0.32016048197221547,
+					"Threshold" : -1.6687183752436539,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : -1.5905256119577798,
+					"Attrib inputs-2" : -0.27791107631652934,
+					"Attrib inputs-3" : 0.86570920284639985,
+					"Threshold" : -0.63267411958653375,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 13.5,
+			"outRange" : 11.5,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : -0.70188687741616806,
+					"Node 2" : 2.0264862602124678,
+					"Node 3" : 0.26620932083098242,
+					"Threshold" : -0.87140926587081324,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -1.0613350226360245,
+					"Attrib inputs-2" : -0.071416323510779464,
+					"Attrib inputs-3" : -0.33098645362212692,
+					"Threshold" : -2.0385372434146092,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 7.7136849226498967,
+					"Attrib inputs-2" : -5.7205356822649236,
+					"Attrib inputs-3" : 4.7194415233831517,
+					"Threshold" : 1.0616577776038749,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : -0.64802846165533079,
+					"Attrib inputs-2" : 0.705797968503448,
+					"Attrib inputs-3" : -1.0125900934421279,
+					"Threshold" : -2.6559004918946023,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 520,
+			"outRange" : 440,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 1.620248223090395,
+					"Node 2" : 1.1574178901744083,
+					"Node 3" : -0.77145950849411571,
+					"Threshold" : -0.37669792803520696,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -5.1311018416279648,
+					"Attrib inputs-2" : 0.53517769566986928,
+					"Attrib inputs-3" : 0.8876507373353909,
+					"Threshold" : -1.7559014430498046,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.85892844470119822,
+					"Attrib inputs-2" : -0.26469635231713101,
+					"Attrib inputs-3" : 1.4438940272685625,
+					"Threshold" : -1.3772844187586801,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 3.4264430692830814,
+					"Attrib inputs-2" : -1.0012445582207474,
+					"Attrib inputs-3" : -1.5213272031269132,
+					"Threshold" : 0.28468474780396097,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 0.54185254871845245,
+			"outRange" : 0.45814745128154755,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 0.82200635733846428,
+					"Node 2" : 0.065490135327749971,
+					"Node 3" : -1.8049634615036521,
+					"Threshold" : 0.46199961425098857,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -1.1549688302267958,
+					"Attrib inputs-2" : 0.66970372408169554,
+					"Attrib inputs-3" : -0.93532649193421558,
+					"Threshold" : -0.86009948242209378,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.13916762654300996,
+					"Attrib inputs-2" : -0.21886898876581318,
+					"Attrib inputs-3" : 0.27147315257602422,
+					"Threshold" : -0.67944337924324838,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 2.9624443528711271,
+					"Attrib inputs-2" : 1.67239095443667,
+					"Attrib inputs-3" : 1.7960190361919761,
+					"Threshold" : -0.046128838948254466,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 12.875,
+			"outRange" : 10.375,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 1.0979881975653512,
+					"Node 2" : 1.5029357890036612,
+					"Node 3" : -0.90453269151515214,
+					"Threshold" : -0.63366965846764722,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -1.6604791591245378,
+					"Attrib inputs-2" : 0.45401889518464311,
+					"Attrib inputs-3" : 0.81988200272362588,
+					"Threshold" : -0.51057525177495477,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.48795633146518524,
+					"Attrib inputs-2" : -0.25021816354756582,
+					"Attrib inputs-3" : 2.1097478929708045,
+					"Threshold" : -0.93714324798795356,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 0.63832754789829649,
+					"Attrib inputs-2" : -1.7608359240779061,
+					"Attrib inputs-3" : -0.17325331097150473,
+					"Threshold" : -0.85050981706898365,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 50,
+			"outRange" : 36,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 0.96877386468847204,
+					"Node 2" : 3.5080682342455392,
+					"Node 3" : -2.1842234991218135,
+					"Threshold" : -0.3548129480369035,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.67755814753056531,
+					"Attrib inputs-2" : 1.580263426990568,
+					"Attrib inputs-3" : -1.478251061497472,
+					"Threshold" : -1.5520209072248516,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.56812908267212481,
+					"Attrib inputs-2" : -0.85681737380791656,
+					"Attrib inputs-3" : 6.6797104380864489,
+					"Threshold" : -2.6090653272559097,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : -0.071488497230251441,
+					"Attrib inputs-2" : -0.73256215037579298,
+					"Attrib inputs-3" : 3.3261864326140032,
+					"Threshold" : 0.32296090271693195,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 2.9674850702285767,
+			"outRange" : 1.5424851179122925,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 1.5292852045090866,
+					"Node 2" : -1.4709258315156164,
+					"Node 3" : -0.49306105032513198,
+					"Threshold" : -0.34299629691553252,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.24622962970136733,
+					"Attrib inputs-2" : 4.4038047232722253,
+					"Attrib inputs-3" : -2.7194656026693171,
+					"Threshold" : -1.2222424298647891,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : -0.82182567246900728,
+					"Attrib inputs-2" : 1.2000533651184382,
+					"Attrib inputs-3" : 1.6244393751459234,
+					"Threshold" : -1.8832104377667569,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : -0.39766361919406729,
+					"Attrib inputs-2" : 0.60945138438374635,
+					"Attrib inputs-3" : 0.31419061434920542,
+					"Threshold" : -1.2605136605574978,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 70.5,
+			"outRange" : 17.5,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : -0.67799167711256603,
+					"Node 2" : 1.6473114750155204,
+					"Node 3" : -1.0712382179513065,
+					"Threshold" : -0.35830749110389237,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.77781888268470545,
+					"Attrib inputs-2" : -0.60673377320387467,
+					"Attrib inputs-3" : 0.29454967946371735,
+					"Threshold" : -1.102966469371552,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.079578888222283942,
+					"Attrib inputs-2" : -2.6376918961358822,
+					"Attrib inputs-3" : 3.8306426711768622,
+					"Threshold" : 1.9520361591426625,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : -1.7914575564370885,
+					"Attrib inputs-2" : -0.037123267385706649,
+					"Attrib inputs-3" : -0.56078359335045225,
+					"Threshold" : -1.6252242243260011,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 0.40258721262216568,
+			"outRange" : 0.37086781114339828,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : -0.13220982021622313,
+					"Node 2" : 1.2420491500540434,
+					"Node 3" : -1.6374454892904671,
+					"Threshold" : 0.35474249435292465,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.26359318407496923,
+					"Attrib inputs-2" : -0.40706771291989252,
+					"Attrib inputs-3" : 0.1566291855183394,
+					"Threshold" : -1.1034644409908729,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.65044232807180902,
+					"Attrib inputs-2" : -1.4055415411183025,
+					"Attrib inputs-3" : 1.2273857186086456,
+					"Threshold" : -0.20563236585744499,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 3.9370557232732919,
+					"Attrib inputs-2" : 2.2031514596684931,
+					"Attrib inputs-3" : 2.4172633189166994,
+					"Threshold" : 0.3233453851729825,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 0.43913700059056282,
+			"outRange" : 0.32563499733805656,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 0.5193619611274416,
+					"Node 2" : 1.9931899691107118,
+					"Node 3" : -1.8420101612748003,
+					"Threshold" : 0.703564827120709,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.17815747646861754,
+					"Attrib inputs-2" : -1.3672573757570297,
+					"Attrib inputs-3" : -0.40478009283054073,
+					"Threshold" : -1.4710088278347828,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.4138250753392122,
+					"Attrib inputs-2" : -0.15197088694448962,
+					"Attrib inputs-3" : 3.5519312599658863,
+					"Threshold" : -1.5977577612062264,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 4.4150308923228341,
+					"Attrib inputs-2" : 2.3980092875862238,
+					"Attrib inputs-3" : 1.903908267357316,
+					"Threshold" : -0.15968194781525136,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 0.65995500981807709,
+			"outRange" : 0.2194720059633255,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 1.0166237315316251,
+					"Node 2" : 1.7051666130345977,
+					"Node 3" : -2.8475739992005891,
+					"Threshold" : -0.61914715103436657,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : 0.72974507417943946,
+					"Attrib inputs-2" : 0.18142918774944947,
+					"Attrib inputs-3" : 1.2926935928643866,
+					"Threshold" : -1.0332489673964647,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.85375575796055536,
+					"Attrib inputs-2" : -2.7436043093626972,
+					"Attrib inputs-3" : 2.8205706990991435,
+					"Threshold" : 1.2931237746272013,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 0.1413164218778451,
+					"Attrib inputs-2" : -1.2520076042902197,
+					"Attrib inputs-3" : 5.5932436463942992,
+					"Threshold" : -2.3325489861197624,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 5387.4300537109375,
+			"outRange" : 3549.6500244140625,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 1.8954466430463144,
+					"Node 2" : 2.2631186111090034,
+					"Node 3" : 0.87230926721056201,
+					"Threshold" : -1.5720541133870582,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.8036493794699382,
+					"Attrib inputs-2" : 2.8641835733644525,
+					"Attrib inputs-3" : -4.935244845205359,
+					"Threshold" : -3.284012110479519,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 5.4219889913145867,
+					"Attrib inputs-2" : -0.60600521642707572,
+					"Attrib inputs-3" : 4.102910829672374,
+					"Threshold" : -1.440243413196197,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 0.56797117276739639,
+					"Attrib inputs-2" : -0.87221317708777246,
+					"Attrib inputs-3" : -0.68377768169950026,
+					"Threshold" : -1.7818526581956879,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 15,
+			"outRange" : 14,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 2.0421205503817514,
+					"Node 2" : 2.7517300320151405,
+					"Node 3" : -0.6266486913817606,
+					"Threshold" : -2.6966378487076526,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -2.4681326810744997,
+					"Attrib inputs-2" : 0.078610826225782235,
+					"Attrib inputs-3" : 2.8475096628577581,
+					"Threshold" : 1.4262564913776969,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 9.2301924381895706,
+					"Attrib inputs-2" : 0.10581718687039278,
+					"Attrib inputs-3" : -4.4453758241424088,
+					"Threshold" : 1.1462354796214729,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 1.3731054147995796,
+					"Attrib inputs-2" : -0.49579982345755241,
+					"Attrib inputs-3" : -1.2568456928567779,
+					"Threshold" : -1.7323394229647195,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 11.547829508781433,
+			"outRange" : 8.4100695848464966,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : -2.3015169005520848,
+					"Node 2" : 1.7908007450240846,
+					"Node 3" : -2.0850330868803546,
+					"Threshold" : 1.5472136763402444,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -1.5854888585771041,
+					"Attrib inputs-2" : -0.80628834881410938,
+					"Attrib inputs-3" : -4.1474905542991944,
+					"Threshold" : -0.89506016055030535,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 1.0701627145110761,
+					"Attrib inputs-2" : -3.5465026654554963,
+					"Attrib inputs-3" : -0.3957480678522316,
+					"Threshold" : -1.126170331298578,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 6.7475045769691029,
+					"Attrib inputs-2" : -0.28858700513900937,
+					"Attrib inputs-3" : 4.1952153580554752,
+					"Threshold" : -1.4366763175909807,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 1654.5,
+			"outRange" : 1240.5,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 1.8015941923353866,
+					"Node 2" : 1.7820171179861444,
+					"Node 3" : 1.3160450904128593,
+					"Threshold" : -1.5466142244399326,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.74777435275871884,
+					"Attrib inputs-2" : 1.7062489366656184,
+					"Attrib inputs-3" : -4.7758316335489397,
+					"Threshold" : -2.9084424230304218,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 3.8566806365422068,
+					"Attrib inputs-2" : -0.78844463626017047,
+					"Attrib inputs-3" : 3.0519289189970564,
+					"Threshold" : -1.1845962570067259,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 2.183815630711869,
+					"Attrib inputs-2" : 0.04195938809430217,
+					"Attrib inputs-3" : -1.013875970847111,
+					"Threshold" : -2.3670027498056858,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 288.5,
+			"outRange" : 164.5,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 1.0734770944033478,
+					"Node 2" : 0.36654526692389616,
+					"Node 3" : -1.9402260801932174,
+					"Threshold" : -0.0043183616900878286,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -1.6238371876494699,
+					"Attrib inputs-2" : -0.70291968076100431,
+					"Attrib inputs-3" : -1.5285675519679898,
+					"Threshold" : -0.12346351320515916,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.12691126978642137,
+					"Attrib inputs-2" : -0.86564138140365932,
+					"Attrib inputs-3" : -0.24550985585386012,
+					"Threshold" : -1.0682082924931526,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 4.5173899646519278,
+					"Attrib inputs-2" : 0.19803821498282623,
+					"Attrib inputs-3" : 0.75870986830891907,
+					"Threshold" : -2.1085934887667861,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 682,
+			"outRange" : 210,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 2.2329051459272016,
+					"Node 2" : 0.40140136441965157,
+					"Node 3" : -0.10924078854085933,
+					"Threshold" : -1.0241622513072683,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -3.1806694634769208,
+					"Attrib inputs-2" : 1.207902008598648,
+					"Attrib inputs-3" : -3.175583958470837,
+					"Threshold" : -3.4528284783524459,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.24445518380260886,
+					"Attrib inputs-2" : -0.57944825869041472,
+					"Attrib inputs-3" : 0.22857066129707934,
+					"Threshold" : -0.76338752463075921,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 1.2345796719320552,
+					"Attrib inputs-2" : 0.42233853331670773,
+					"Attrib inputs-3" : -0.3108007238063944,
+					"Threshold" : 0.52145028966865414,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 1239,
+			"outRange" : 904,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 2.6910829803006409,
+					"Node 2" : -1.617242507343454,
+					"Node 3" : -2.6420675580749529,
+					"Threshold" : -0.56468106795174089,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -1.1258938530444209,
+					"Attrib inputs-2" : 1.1339959146193423,
+					"Attrib inputs-3" : -6.1006902682959945,
+					"Threshold" : 1.4427735135005093,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : -0.23830229683299095,
+					"Attrib inputs-2" : -1.2966275311493356,
+					"Attrib inputs-3" : -0.58580893815713542,
+					"Threshold" : -2.2666663237224771,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : -0.42301510197604625,
+					"Attrib inputs-2" : -0.21260631373289579,
+					"Attrib inputs-3" : -4.3730161585297598,
+					"Threshold" : -0.74835101087218947,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 479,
+			"outRange" : 423,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 2.1624527288352806,
+					"Node 2" : 1.9625755479465328,
+					"Node 3" : 0.72848931385357363,
+					"Threshold" : -1.9839834281234778,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -1.7334153137800867,
+					"Attrib inputs-2" : -0.40369138063092919,
+					"Attrib inputs-3" : -4.6055514724980755,
+					"Threshold" : -0.89970860930619379,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 4.9008364012228514,
+					"Attrib inputs-2" : 0.36180195603281229,
+					"Attrib inputs-3" : 3.5135070128347916,
+					"Threshold" : -1.3864196992984548,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 1.3496936955623915,
+					"Attrib inputs-2" : -0.51693451815009583,
+					"Attrib inputs-3" : -2.2043083984026368,
+					"Threshold" : -1.9684977413589089,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 1540,
+			"outRange" : 422,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 2.718391666769278,
+					"Node 2" : -0.59647010061873895,
+					"Node 3" : -1.3020140681974488,
+					"Threshold" : -0.86823745977195144,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : 0.57741025451130068,
+					"Attrib inputs-2" : 0.84518344114281285,
+					"Attrib inputs-3" : -6.0890739046368507,
+					"Threshold" : 1.9914371096851526,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.038414137853538928,
+					"Attrib inputs-2" : -0.26390308837811399,
+					"Attrib inputs-3" : -0.96805525630923417,
+					"Threshold" : -0.84847606169118994,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : -0.67740001966470298,
+					"Attrib inputs-2" : 0.29788156109797154,
+					"Attrib inputs-3" : -1.3573857306984145,
+					"Threshold" : -0.78945290071125718,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 2623.5,
+			"outRange" : 328.5,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 2.6822751715892807,
+					"Node 2" : 2.2094985054381997,
+					"Node 3" : 0.10425266353674827,
+					"Threshold" : -1.5457519926181313,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.54590970844723419,
+					"Attrib inputs-2" : 1.4846623024859649,
+					"Attrib inputs-3" : -5.4943273646502933,
+					"Threshold" : -2.7208749202962088,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 3.6738931325059054,
+					"Attrib inputs-2" : -0.97787613492829084,
+					"Attrib inputs-3" : 4.0535090073998656,
+					"Threshold" : -1.4261671535453588,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 0.33653791591981641,
+					"Attrib inputs-2" : -0.011014161287872751,
+					"Attrib inputs-3" : -0.62684433609929202,
+					"Threshold" : -2.1480994992899816,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 3459,
+			"outRange" : 449,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 1.3825690530556272,
+					"Node 2" : 0.40429510400694207,
+					"Node 3" : -1.1943279087915912,
+					"Threshold" : 0.063165833812808408,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -2.5807829455530404,
+					"Attrib inputs-2" : 0.68704357150863626,
+					"Attrib inputs-3" : -2.221867671910811,
+					"Threshold" : -2.7114430060388388,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.27246984788402001,
+					"Attrib inputs-2" : -0.49607272151728726,
+					"Attrib inputs-3" : 0.3707591046304422,
+					"Threshold" : -1.1101792688575045,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 3.1981461574646421,
+					"Attrib inputs-2" : 2.5852345976967892,
+					"Attrib inputs-3" : -1.4615344470251734,
+					"Threshold" : -1.4302396489968414,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 2.870805025100708,
+			"outRange" : 1.870805025100708,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 2.3543691733953929,
+					"Node 2" : -0.012720047098293845,
+					"Node 3" : -1.8348368483610402,
+					"Threshold" : -0.57652279756199554,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.52335570770314432,
+					"Attrib inputs-2" : -0.40771230384148455,
+					"Attrib inputs-3" : -5.4384668716577629,
+					"Threshold" : -1.6457551320318493,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.22320507080099994,
+					"Attrib inputs-2" : -1.154426159107045,
+					"Attrib inputs-3" : -0.74542115096235051,
+					"Threshold" : -1.2434098993206602,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 0.74102840006761739,
+					"Attrib inputs-2" : 0.88311456707063851,
+					"Attrib inputs-3" : -1.6454340827907887,
+					"Threshold" : -0.98339640744559342,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 2.9304500818252563,
+			"outRange" : 1.5061200857162476,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 2.7964133063725405,
+					"Node 2" : -1.0946200608664931,
+					"Node 3" : -1.4442156519942879,
+					"Threshold" : -0.86815490707880605,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.27047426502334426,
+					"Attrib inputs-2" : 0.74540756220781645,
+					"Attrib inputs-3" : -6.1682236784641553,
+					"Threshold" : 2.1124272609326344,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : -0.46393647070084776,
+					"Attrib inputs-2" : -0.17474949075976043,
+					"Attrib inputs-3" : -1.3674940067641737,
+					"Threshold" : -0.59575670427779193,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 1.1439067226333262,
+					"Attrib inputs-2" : 0.49943862057472171,
+					"Attrib inputs-3" : -1.2923208915078666,
+					"Threshold" : -1.4498706950251166,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 2.7126200199127197,
+			"outRange" : 1.7126200199127197,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 2.4855152004236789,
+					"Node 2" : 1.0081730228464301,
+					"Node 3" : -1.8240557298056257,
+					"Threshold" : -0.20345142590483684,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.99404331816210367,
+					"Attrib inputs-2" : -0.18302575459713813,
+					"Attrib inputs-3" : -4.8395816298124572,
+					"Threshold" : -1.3361506074558764,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : -0.16116759110473161,
+					"Attrib inputs-2" : -1.6056367637408417,
+					"Attrib inputs-3" : -1.639743338107549,
+					"Threshold" : -2.455149174657147,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 0.3621578234313193,
+					"Attrib inputs-2" : 0.17415560079658463,
+					"Attrib inputs-3" : -2.5864846365051122,
+					"Threshold" : 0.70028768559046572,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 2.8092100620269775,
+			"outRange" : 1.8092100620269775,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : -0.4662063588739726,
+					"Node 2" : 2.3408701223599198,
+					"Node 3" : -0.094177713612879271,
+					"Threshold" : -0.85962995041330625,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.46953400302664366,
+					"Attrib inputs-2" : 0.20106267757171806,
+					"Attrib inputs-3" : -0.51813159240866136,
+					"Threshold" : -1.1610489741378862,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 2.8230091239638533,
+					"Attrib inputs-2" : -0.90432315259934137,
+					"Attrib inputs-3" : 1.6491929448139848,
+					"Threshold" : 0.71603750206378103,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 0.33132171050088194,
+					"Attrib inputs-2" : 0.14520973746682556,
+					"Attrib inputs-3" : -0.11071624666710035,
+					"Threshold" : -1.051244231688726,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 818.5,
+			"outRange" : 541.5,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : -1.4292626256191336,
+					"Node 2" : 1.0745195349313128,
+					"Node 3" : -2.4646527102098781,
+					"Threshold" : 1.5000681049012252,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -1.7942349639362585,
+					"Attrib inputs-2" : -0.66122757721929837,
+					"Attrib inputs-3" : -3.3211765441939538,
+					"Threshold" : -0.94971923374452105,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.47101001991237518,
+					"Attrib inputs-2" : -2.0587374309851811,
+					"Attrib inputs-3" : -0.32932126659246552,
+					"Threshold" : -1.1704842871424987,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 8.2843293073969093,
+					"Attrib inputs-2" : -0.16641430444726985,
+					"Attrib inputs-3" : 4.2854496501352664,
+					"Threshold" : -1.6788318212864191,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 260.5,
+			"outRange" : 183.5,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : -0.16655537518664773,
+					"Node 2" : 0.75460099111331957,
+					"Node 3" : -1.5400178540919791,
+					"Threshold" : 0.47611005185417093,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.30935174318929254,
+					"Attrib inputs-2" : -0.22038569235565661,
+					"Attrib inputs-3" : 0.1663003340137488,
+					"Threshold" : -1.4727503664956449,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.46046969148539246,
+					"Attrib inputs-2" : -3.4113441228612613,
+					"Attrib inputs-3" : 1.5239653830668651,
+					"Threshold" : -0.11720676936052472,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : -0.62531955279342311,
+					"Attrib inputs-2" : 3.0258215082950426,
+					"Attrib inputs-3" : -3.035700972021548,
+					"Threshold" : -1.5201700939868983,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 212.5,
+			"outRange" : 132.5,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : -0.72811620979019276,
+					"Node 2" : 2.446658047560752,
+					"Node 3" : -1.2316946116924417,
+					"Threshold" : 0.22221744182156936,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.10099476022037499,
+					"Attrib inputs-2" : -0.58068194063277445,
+					"Attrib inputs-3" : 0.6545875636069185,
+					"Threshold" : -1.1862405086327585,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 3.1416266569215203,
+					"Attrib inputs-2" : -0.21961313985969583,
+					"Attrib inputs-3" : 5.4983756518971489,
+					"Threshold" : -2.7505354198145762,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : -3.0699015673181975,
+					"Attrib inputs-2" : 1.7581296003964058,
+					"Attrib inputs-3" : 1.9870192717120445,
+					"Threshold" : 0.38846206482655404,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 1712,
+			"outRange" : 1157,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : -1.3472402728345911,
+					"Node 2" : 2.246532842858159,
+					"Node 3" : -0.29628183136337555,
+					"Threshold" : -0.27881993694891216,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : 0.017795792030979321,
+					"Attrib inputs-2" : -0.2857847633583952,
+					"Attrib inputs-3" : -3.5859945808490137,
+					"Threshold" : -1.8407715237361382,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 6.6416172993622826,
+					"Attrib inputs-2" : -0.47010474227439214,
+					"Attrib inputs-3" : -3.4480804299147585,
+					"Threshold" : 0.63366146880272511,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 1.6547500554637975,
+					"Attrib inputs-2" : -0.65747500149107152,
+					"Attrib inputs-3" : -0.098717358693118526,
+					"Threshold" : -1.052187910641069,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 1671,
+			"outRange" : 1260,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : -0.4405537528781806,
+					"Node 2" : 2.0614559150568939,
+					"Node 3" : -1.2305230111621839,
+					"Threshold" : 0.058050254051199318,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.58752590013114481,
+					"Attrib inputs-2" : 0.54163352388610897,
+					"Attrib inputs-3" : -0.0025280044083465379,
+					"Threshold" : -1.1081795318465575,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 2.316272705104947,
+					"Attrib inputs-2" : 0.20289484134182581,
+					"Attrib inputs-3" : 1.7311865258513577,
+					"Threshold" : -0.71884800877073762,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : -1.1374117687598193,
+					"Attrib inputs-2" : 1.3812705488252499,
+					"Attrib inputs-3" : -0.57916941553077939,
+					"Threshold" : -1.0576128396624005,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 285,
+			"outRange" : 204,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 0.97456861556998431,
+					"Node 2" : -0.68361989317312943,
+					"Node 3" : -2.6342421146364976,
+					"Threshold" : 1.5410649195521358,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.0032581136904652444,
+					"Attrib inputs-2" : -0.64831547084255448,
+					"Attrib inputs-3" : -0.71444203323220867,
+					"Threshold" : -1.0533544410709965,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : -0.12215500757293084,
+					"Attrib inputs-2" : 0.38079517586200312,
+					"Attrib inputs-3" : 2.1386503926103431,
+					"Threshold" : 1.0726174553835275,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : -0.13997117853434182,
+					"Attrib inputs-2" : 0.0034519116884210639,
+					"Attrib inputs-3" : -6.8213662579691583,
+					"Threshold" : -2.1213741247266618,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 508,
+			"outRange" : 460,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 2.0908240488852408,
+					"Node 2" : 0.93029774879266569,
+					"Node 3" : -0.72282358661171897,
+					"Threshold" : -1.5225344677615731,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : 1.3904505847586766,
+					"Attrib inputs-2" : 0.48484840290510645,
+					"Attrib inputs-3" : -1.9992182757771013,
+					"Threshold" : 0.51045333750506239,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 1.1819903932569047,
+					"Attrib inputs-2" : 0.34461475961030824,
+					"Attrib inputs-3" : -4.1699641645661274e-05,
+					"Threshold" : -0.91682218677021154,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : -0.22909383374900941,
+					"Attrib inputs-2" : -0.068679474910703364,
+					"Attrib inputs-3" : 1.1332909656180734,
+					"Threshold" : -1.1221551528720495,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 1833.5,
+			"outRange" : 228.5,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 1.0170973303981177,
+					"Node 2" : 3.2448944145554419,
+					"Node 3" : 2.6350100936407195,
+					"Threshold" : -2.2595728097864711,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.56222399089186637,
+					"Attrib inputs-2" : 1.2340164474666799,
+					"Attrib inputs-3" : -0.92510250407560202,
+					"Threshold" : -1.7745178627965947,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.53760612236079852,
+					"Attrib inputs-2" : -0.74317406236840267,
+					"Attrib inputs-3" : 6.3155054096661782,
+					"Threshold" : -2.0299961979171703,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 0.061051491303161787,
+					"Attrib inputs-2" : 0.71517888218380909,
+					"Attrib inputs-3" : -4.7692513858802208,
+					"Threshold" : -1.2000274380299858,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 50,
+			"outRange" : 46,
+			"whichInputs" : [ 0, 1, 2 ]
+		},
+		{
+			"inBases" : [ 0, -1.4344613552093506, -21.089838981628418 ],
+			"inRanges" : [ 5, 2.5655386447906494, 12.473019599914551 ],
+			"inputNames" : [ "inputs-1", "inputs-2", "inputs-3" ],
+			"modelType" : "Neural Network",
+			"nodes" : 
+			[
+				{
+					"Node 1" : 3.0834671716827278,
+					"Node 2" : 1.7824104278960127,
+					"Node 3" : -3.4579609616093379,
+					"Threshold" : -0.86995490617789761,
+					"name" : "Linear Node 0"
+				},
+				{
+					"Attrib inputs-1" : -0.57765851698779824,
+					"Attrib inputs-2" : 0.81884040587898632,
+					"Attrib inputs-3" : 5.0749555326369711,
+					"Threshold" : 0.24784443087530011,
+					"name" : "Sigmoid Node 1"
+				},
+				{
+					"Attrib inputs-1" : 0.055871680320044782,
+					"Attrib inputs-2" : -4.972889646009131,
+					"Attrib inputs-3" : 0.50367448409671656,
+					"Threshold" : -1.0322960213033576,
+					"name" : "Sigmoid Node 2"
+				},
+				{
+					"Attrib inputs-1" : 2.9858916898516057,
+					"Attrib inputs-2" : -0.41530124232865462,
+					"Attrib inputs-3" : 5.7419946043296628,
+					"Threshold" : -2.0268485638494953,
+					"name" : "Sigmoid Node 3"
+				}
+			],
+			"numHiddenLayers" : 1,
+			"numHiddenNodes" : 3,
+			"numHiddenOutputs" : 1,
+			"numInputs" : 3,
+			"outBase" : 46,
+			"outRange" : 27,
+			"whichInputs" : [ 0, 1, 2 ]
+		}
+	]
+}

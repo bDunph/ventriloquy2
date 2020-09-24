@@ -991,7 +991,7 @@ void avObject::randomParams(){
 
 void avObject::trainingExamples(float x, float y, float z){
     
-    trainingExample tempExample;
+    rapidlib::trainingExample tempExample;
     
 //    if(x > 5.0){
 //        x = 5.0;
@@ -1049,7 +1049,7 @@ void avObject::trainedOutput(float x, float y, float z){
     input.push_back ((double)y);
     input.push_back ((double)z);
     
-    output = reg.process(input);
+    output = reg.run(input);
     
     noiseSpeed = output[0];
     if(output[0] <= 1){

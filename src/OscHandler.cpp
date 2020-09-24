@@ -40,6 +40,7 @@ void OscHandler::receiveMessages(){
         address = msg.getAddress();
 //        argValue = msg.getArgAsFloat(0);
         argValue = msg.getArgAsInt(0);
+        std::cout << "MESSSSSSSAGEE" << std::endl;
     }
 
 }

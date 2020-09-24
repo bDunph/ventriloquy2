@@ -44,7 +44,7 @@
 #include "ofxMaxim.h"
 #include "maximilian.h"
 #include "maxiGrains.h"
-#include "psMoveTrackerClass.hpp"
+//#include "psMoveTrackerClass.hpp"
 
 
 #define SOUNDWAVES 20
@@ -87,7 +87,7 @@ public:
     //********* elements accessed from ofApp av1, av2 etc*******//
     ofxPanel gui;
     ofxPanel guiRW;
-    regression reg;
+    rapidlib::regression reg;
     ofxFloatSlider xTrans;
     ofxFloatSlider yTrans;
     ofxFloatSlider zTrans;
@@ -427,7 +427,7 @@ private:
     //********** Rapidmix ************//
     
     
-    std::vector<trainingExample> trainingSet;
+    std::vector<rapidlib::trainingExample> trainingSet;
     
     bool result;
     bool isTrained;

@@ -12,14 +12,14 @@
 #include <time.h>
 #include <assert.h>
 
-#include "ofxSyphon.h"
-#include "ofxCv.h"
-#include "ofxOpenCv.h"
-#include "opencv2/core/core_c.h"
-#include "opencv2/highgui/highgui_c.h"
+//#include "ofxSyphon.h"
+//#include "ofxCv.h"
+//#include "ofxOpenCv.h"
+//#include "opencv2/core/core_c.h"
+//#include "opencv2/highgui/highgui_c.h"
 
 #include "avObject.hpp"
-#include "psMoveTrackerClass.hpp"
+//#include "psMoveTrackerClass.hpp"
 #include "controller.hpp"
 
 //#define PREPMODE 3
@@ -27,7 +27,7 @@
 #define NUMAVS 3
 //#define PSMOVE_ON 1
 //#define PSMOVE_OFF 2
-#define PORT 9000
+#define PORT 8000
 
 class ofApp : public ofBaseApp {
     

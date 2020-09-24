@@ -61,12 +61,6 @@
 		770648C5251A160B00620FBC /* touchOsc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 770648A6251A160A00620FBC /* touchOsc.cpp */; };
 		770648C6251A160B00620FBC /* controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 770648A7251A160A00620FBC /* controller.cpp */; };
 		770648C7251A160B00620FBC /* avObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 770648A8251A160A00620FBC /* avObject.cpp */; };
-		770648C8251A160B00620FBC /* regression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 770648AB251A160B00620FBC /* regression.cpp */; };
-		770648C9251A160B00620FBC /* neuralNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 770648AC251A160B00620FBC /* neuralNetwork.cpp */; };
-		770648CA251A160B00620FBC /* modelSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 770648B0251A160B00620FBC /* modelSet.cpp */; };
-		770648CB251A160B00620FBC /* classification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 770648BB251A160B00620FBC /* classification.cpp */; };
-		770648CC251A160B00620FBC /* jsoncpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 770648BF251A160B00620FBC /* jsoncpp.cpp */; };
-		770648CD251A160B00620FBC /* knnClassification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 770648C0251A160B00620FBC /* knnClassification.cpp */; };
 		7C3A42DE764187C9042B8684 /* filter_utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4565618B92E9C4D0BFA6196 /* filter_utilities.cpp */; };
 		7CDAD32BE4FA46701E3552C7 /* RunningBackground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CBF6AED6A17AC0C17F63CC4 /* RunningBackground.cpp */; };
 		837220E80EB56CD44AD27F2A /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F2C6477A769C03A56D1401 /* ofxSlider.cpp */; };
@@ -401,27 +395,6 @@
 		770648A6251A160A00620FBC /* touchOsc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = touchOsc.cpp; sourceTree = "<group>"; };
 		770648A7251A160A00620FBC /* controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = controller.cpp; sourceTree = "<group>"; };
 		770648A8251A160A00620FBC /* avObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = avObject.cpp; sourceTree = "<group>"; };
-		770648AA251A160B00620FBC /* modelSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelSet.h; sourceTree = "<group>"; };
-		770648AB251A160B00620FBC /* regression.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = regression.cpp; sourceTree = "<group>"; };
-		770648AC251A160B00620FBC /* neuralNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = neuralNetwork.cpp; sourceTree = "<group>"; };
-		770648AD251A160B00620FBC /* knnClassification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = knnClassification.h; sourceTree = "<group>"; };
-		770648AE251A160B00620FBC /* trainingExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trainingExample.h; sourceTree = "<group>"; };
-		770648AF251A160B00620FBC /* regression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regression.h; sourceTree = "<group>"; };
-		770648B0251A160B00620FBC /* modelSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = modelSet.cpp; sourceTree = "<group>"; };
-		770648B2251A160B00620FBC /* json-forwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "json-forwards.h"; sourceTree = "<group>"; };
-		770648B3251A160B00620FBC /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
-		770648B5251A160B00620FBC /* modelSetEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelSetEmbindings.h; sourceTree = "<group>"; };
-		770648B6251A160B00620FBC /* regressionEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regressionEmbindings.h; sourceTree = "<group>"; };
-		770648B7251A160B00620FBC /* classificationEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classificationEmbindings.h; sourceTree = "<group>"; };
-		770648B8251A160B00620FBC /* rapidMix.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rapidMix.js; sourceTree = "<group>"; };
-		770648B9251A160B00620FBC /* knnEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = knnEmbindings.h; sourceTree = "<group>"; };
-		770648BA251A160B00620FBC /* nnEmbindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nnEmbindings.h; sourceTree = "<group>"; };
-		770648BB251A160B00620FBC /* classification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = classification.cpp; sourceTree = "<group>"; };
-		770648BC251A160B00620FBC /* neuralNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neuralNetwork.h; sourceTree = "<group>"; };
-		770648BD251A160B00620FBC /* classification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classification.h; sourceTree = "<group>"; };
-		770648BE251A160B00620FBC /* baseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseModel.h; sourceTree = "<group>"; };
-		770648BF251A160B00620FBC /* jsoncpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jsoncpp.cpp; sourceTree = "<group>"; };
-		770648C0251A160B00620FBC /* knnClassification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = knnClassification.cpp; sourceTree = "<group>"; };
 		770648C1251A160B00620FBC /* touchOsc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = touchOsc.hpp; sourceTree = "<group>"; };
 		77A1A692522820F935B58762 /* Kalman.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Kalman.cpp; path = ../../../addons/ofxCv/libs/ofxCv/src/Kalman.cpp; sourceTree = SOURCE_ROOT; };
 		78D67A00EB899FAC09430597 /* ofxLabel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxLabel.cpp; path = ../../../addons/ofxGui/src/ofxLabel.cpp; sourceTree = SOURCE_ROOT; };
@@ -1784,50 +1757,6 @@
 			name = opencl;
 			sourceTree = "<group>";
 		};
-		770648A9251A160B00620FBC /* rapidmix */ = {
-			isa = PBXGroup;
-			children = (
-				770648AA251A160B00620FBC /* modelSet.h */,
-				770648AB251A160B00620FBC /* regression.cpp */,
-				770648AC251A160B00620FBC /* neuralNetwork.cpp */,
-				770648AD251A160B00620FBC /* knnClassification.h */,
-				770648AE251A160B00620FBC /* trainingExample.h */,
-				770648AF251A160B00620FBC /* regression.h */,
-				770648B0251A160B00620FBC /* modelSet.cpp */,
-				770648B1251A160B00620FBC /* json */,
-				770648B4251A160B00620FBC /* emscripten */,
-				770648BB251A160B00620FBC /* classification.cpp */,
-				770648BC251A160B00620FBC /* neuralNetwork.h */,
-				770648BD251A160B00620FBC /* classification.h */,
-				770648BE251A160B00620FBC /* baseModel.h */,
-				770648BF251A160B00620FBC /* jsoncpp.cpp */,
-				770648C0251A160B00620FBC /* knnClassification.cpp */,
-			);
-			path = rapidmix;
-			sourceTree = "<group>";
-		};
-		770648B1251A160B00620FBC /* json */ = {
-			isa = PBXGroup;
-			children = (
-				770648B2251A160B00620FBC /* json-forwards.h */,
-				770648B3251A160B00620FBC /* json.h */,
-			);
-			path = json;
-			sourceTree = "<group>";
-		};
-		770648B4251A160B00620FBC /* emscripten */ = {
-			isa = PBXGroup;
-			children = (
-				770648B5251A160B00620FBC /* modelSetEmbindings.h */,
-				770648B6251A160B00620FBC /* regressionEmbindings.h */,
-				770648B7251A160B00620FBC /* classificationEmbindings.h */,
-				770648B8251A160B00620FBC /* rapidMix.js */,
-				770648B9251A160B00620FBC /* knnEmbindings.h */,
-				770648BA251A160B00620FBC /* nnEmbindings.h */,
-			);
-			path = emscripten;
-			sourceTree = "<group>";
-		};
 		7AB8B22EC6159BA7A217C60E /* cuda */ = {
 			isa = PBXGroup;
 			children = (
@@ -2789,7 +2718,6 @@
 				770648A3251A160A00620FBC /* ofApp.h */,
 				770648A4251A160A00620FBC /* OscHandler.cpp */,
 				770648A5251A160A00620FBC /* OscHandler.hpp */,
-				770648A9251A160B00620FBC /* rapidmix */,
 				770648A6251A160A00620FBC /* touchOsc.cpp */,
 				770648C1251A160B00620FBC /* touchOsc.hpp */,
 			);
@@ -3035,7 +2963,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				770648CC251A160B00620FBC /* jsoncpp.cpp in Sources */,
 				250A95BA26587BE85DB0A353 /* ofxCvColorImage.cpp in Sources */,
 				1D5F3298C2FA073628012944 /* ofxCvContourFinder.cpp in Sources */,
 				770648C3251A160B00620FBC /* ofApp.cpp in Sources */,
@@ -3060,7 +2987,6 @@
 				770648C5251A160B00620FBC /* touchOsc.cpp in Sources */,
 				DBCB84A37F9AECC254870D79 /* Wrappers.cpp in Sources */,
 				856AA354D08AB4B323081444 /* ofxBaseGui.cpp in Sources */,
-				770648CD251A160B00620FBC /* knnClassification.cpp in Sources */,
 				5CBB2AB3A60F65431D7B555D /* ofxButton.cpp in Sources */,
 				853E0BA2F448076739446874 /* ofxColorPicker.cpp in Sources */,
 				B266578FC55D23BFEBC042E7 /* ofxGuiGroup.cpp in Sources */,
@@ -3100,12 +3026,10 @@
 				5864AD82E20F15536D054EA3 /* ofxOscMessage.cpp in Sources */,
 				4ADB88E2FB52E76A471065DE /* ofxOscParameterSync.cpp in Sources */,
 				640279EE111671BD026CB013 /* ofxOscReceiver.cpp in Sources */,
-				770648C9251A160B00620FBC /* neuralNetwork.cpp in Sources */,
 				8F5205AEF8861EF234F0651A /* ofxOscSender.cpp in Sources */,
 				66CA904322CB0FEB4EAEB6B6 /* classification.cpp in Sources */,
 				D24E376090FA0DC8ABC30FD7 /* BayesianFilter.cpp in Sources */,
 				7C3A42DE764187C9042B8684 /* filter_utilities.cpp in Sources */,
-				770648CA251A160B00620FBC /* modelSet.cpp in Sources */,
 				4B4E224845BBEAEEB74132B3 /* jsoncpp.cpp in Sources */,
 				33E4A99ECA1C324D9A5B2AE1 /* libsvm.cpp in Sources */,
 				770648C6251A160B00620FBC /* controller.cpp in Sources */,
@@ -3123,10 +3047,8 @@
 				681F19F7152171CAB7CB20E9 /* warpPath.cpp in Sources */,
 				C9109422648B170B07A778CF /* SyphonNameboundClient.m in Sources */,
 				1F558B76FB3412843DDAA031 /* ofxSyphonClient.mm in Sources */,
-				770648C8251A160B00620FBC /* regression.cpp in Sources */,
 				8D60C222CBD3F869382832E9 /* ofxSyphonServer.mm in Sources */,
 				11DF9AB1B4EAA63E3B190CA0 /* ofxSyphonServerDirectory.mm in Sources */,
-				770648CB251A160B00620FBC /* classification.cpp in Sources */,
 				933A2227713C720CEFF80FD9 /* tinyxml.cpp in Sources */,
 				9D44DC88EF9E7991B4A09951 /* tinyxmlerror.cpp in Sources */,
 				5A4349E9754D6FA14C0F2A3A /* tinyxmlparser.cpp in Sources */,

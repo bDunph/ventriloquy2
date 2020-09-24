@@ -114,9 +114,9 @@ void ofApp::setup(){
     
 //#ifdef PERFORMANCEMODE
     for(int i = 0; i < NUMAVS; i++){
-        av[i].gui.loadFromFile("/Users/bryandunphy/Documents/code/of_v0.9.8_osx_release/apps/myApps/regMap/bin/data/ventriloquy2/2ndDraft_180409/section"+ofToString(i)+")/vent2_reg"+ofToString(i)+"_obj0_mainGui.xml");
-        av[i].guiRW.loadFromFile("/Users/bryandunphy/Documents/code/of_v0.9.8_osx_release/apps/myApps/regMap/bin/data/ventriloquy2/2ndDraft_180409/section"+ofToString(i)+"/vent2_reg"+ofToString(i)+"_obj0_guiRW.xml");
-        av[i].reg.readJSON("/Users/bryandunphy/Documents/code/of_v0.9.8_osx_release/apps/myApps/regMap/bin/data/ventriloquy2/2ndDraft_180409/trainedModels/Vent2_2ndDraft_Reg"+ofToString(i)+"_new.JSON");
+av[i].gui.loadFromFile("data/ventriloquy2/2ndDraft_180409/section"+ofToString(i)+")/vent2_reg"+ofToString(i)+"_obj0_mainGui.xml");
+av[i].guiRW.loadFromFile("data/ventriloquy2/2ndDraft_180409/section"+ofToString(i)+"/vent2_reg"+ofToString(i)+"_obj0_guiRW.xml");
+//av[i].reg.readJSON("data/ventriloquy2/2ndDraft_180409/trainedModels/Vent2_2ndDraft_Reg"+ofToString(i)+"_new.JSON");
     }
 //#endif
 
@@ -739,30 +739,30 @@ void ofApp::keyPressed(int key){
     if(key == 100){
         drawGui = !drawGui;
     }
-//
-//    if(key == 98){
-//        keyboardCntrlObj1 = !keyboardCntrlObj1;
-//    }
-//
-//    if(key == 110){
-//        keyboardCntrlObj2 = !keyboardCntrlObj2;
-//    }
-//
-//    if(key == 109){
-//        keyboardCntrlObj3 = !keyboardCntrlObj3;
-//    }
+
+    if(key == 98){
+        keyboardCntrlObj1 = !keyboardCntrlObj1;
+    }
+
+    if(key == 110){
+        keyboardCntrlObj2 = !keyboardCntrlObj2;
+    }
+
+    if(key == 109){
+        keyboardCntrlObj3 = !keyboardCntrlObj3;
+    }
     
-//    if(key == 32){
-//        randomButton = true;
-//    }
-//
-//    if(key == 114){
-//        recordButton = true;
-//    }
-//
-//    if(key == 116){
-//        trainButton = true;
-//    }
+    if(key == 32){
+        randomButton = true;
+    }
+
+    if(key == 114){
+        recordButton = true;
+    }
+
+    if(key == 116){
+        trainButton = true;
+    }
     
 }
 

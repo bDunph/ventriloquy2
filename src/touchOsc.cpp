@@ -30,38 +30,6 @@ void TouchOsc::parseMessage(){
     
     osc.receiveMessages();
     
-//    if(osc.address == "/ventriloquy2_galS6/camX"){
-//
-//        camX = osc.argValue;
-//        valArray[0] = camX;
-//
-//    } else if(osc.address == "/ventriloquy2_galS6/camY"){
-//
-//        camY = osc.argValue;
-//        valArray[1] = camY;
-//
-//    } else if(osc.address == "/ventriloquy2_galS6/camZ"){
-//
-//        camZ = osc.argValue;
-//        valArray[2] = camZ;
-//
-//    } else if(osc.address == "/ventriloquy2_galS6/objX"){
-//
-//        objX = osc.argValue;
-//        valArray[3] = objX;
-//
-//    }  else if(osc.address == "/ventriloquy2_galS6/objY"){
-//
-//        objY = osc.argValue;
-//        valArray[4] = objY;
-//
-//    }  else if(osc.address == "/ventriloquy2_galS6/objZ"){
-//
-//        objZ = osc.argValue;
-//        valArray[5] = objZ;
-//
-//    }
-    
     if(osc.address == "/quneo/vSliders/0/location"){
 
         camX = osc.argValue;

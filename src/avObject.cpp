@@ -5,59 +5,31 @@
 //  Created by Bryan Dunphy on 20/02/2017.
 //
 //
-
 #include <avObject.hpp>
 
-avObject::avObject(){
-}
-
-avObject:: ~avObject(){
-    delete gran;
-    std::cout << "~avObject" << std::endl;
-};
-
 void avObject::avSetup(std::string &textureFile){
-    
-    
 //    delete gran;
     
-    sample1.clear();
-    sample1.load(ofToDataPath("samples/lowRumbleLoop.wav"));
-    samp = sample1;
-    gran = new maxiTimePitchStretch<grainPlayerWin, maxiSample>(&samp);
-    grainSpeed = 1.f;
-    grainLength = 0.05f;
+//    sample1.clear();
+//    sample1.load(ofToDataPath("samples/lowRumbleLoop.wav"));
+//    samp = sample1;
+//    gran = new maxiTimePitchStretch<grainPlayerWin, maxiSample>(&samp);
+//    grainSpeed = 1.f;
+//    grainLength = 0.05f;
     
     ofBackground(0);
-    
     ofSetVerticalSync(true);
     
     //******* Texture ********//
-    
     ofDisableArbTex();
     
     //********* Texture/Image Loading ***************//
-    
     img.load(textureFile);
     img.getTexture().setTextureWrap(GL_REPEAT, GL_REPEAT);
     normMap.load("Abstract_003/Abstract_003_NRM.jpg");
     normMap.getTexture().setTextureWrap(GL_REPEAT, GL_REPEAT);
     
-//    tex.allocate(512, 512, GL_RGBA);
-//    tex.setTextureWrap(GL_REPEAT, GL_REPEAT);
-//
-//    for(int k = 0; k < 512 * 512 * 4; k+=4){
-//        texData[k+0] = 0;
-//        texData[k+1] = 0;
-//        texData[k+2] = 0;
-//        texData[k+3] = 0;
-//    }
-//    texPtr = &texData[0];
-//
-//    tex.loadData(texPtr, 512, 512, GL_RGBA);
-    
     //*********** GUI *****************//
-    
     gui.setup();
     gui.setPosition(ofGetWindowWidth() - 220 - 220, ofGetWindowHeight() * .25);
     gui.add(xTrans.setup("xTrans", 0.f, -1.f, 1.f));
@@ -68,16 +40,12 @@ void avObject::avSetup(std::string &textureFile){
     gui.add(visPulse.setup("visPulse", 0.0f, 0.0f, 1000.0f));
     gui.add(size.setup("size0", 100, 50, 1050));
     gui.add(vertices.setup("vertices0", 20, 0, 33));
-//    gui.add(shape.setup("shape0", 1, 0, 1));
-    //        gui.add(wireFrame.setup("wireFrame0", true));
-//            gui.add(texType.setup("texType0", true));
     gui.add(texColR.setup("texColR0", 0, 0, 255));
     gui.add(texColG.setup("texColG0", 0, 0, 255));
     gui.add(texColB.setup("texColB0", 0, 0, 255));
     gui.add(texColA.setup("texColA0", 0, 0, 255));
     gui.add(brightness.setup("brightness0", 0.75, 0.75, 1.0));
-    //        gui.add(synth.setup("synth0", false));
-    gui.add(waveform.setup("waveform0", 0, 0, 3));
+    gui.add(waveform.setup("waveform0", 0, 0, 2));
     gui.add(oscilFreq.setup("oscilFreq0", 10.0, 0.0, 4000.0));
     gui.add(oscilAmp.setup("oscilAmp0", 0.25, 0.0, 1.0));
     gui.add(FM.setup("FM0", true));
@@ -96,25 +64,12 @@ void avObject::avSetup(std::string &textureFile){
     gui.add(decay.setup("decay0", 1, 1, 500));
     gui.add(sustain.setup("sustain0", 1, 1, 1000));
     gui.add(release.setup("release0", 1000, 0, 3000));
-    //        gui.add(delaySig.setup("delaySig0", false));
     
     guiRW.setup();
     guiRW.setPosition(ofGetWindowWidth() - 260 - 260, ofGetWindowHeight() * .2);
     guiRW.add(saveParams.setup("saveParams", 20, 20));
-    //        guiRW.add(loadParams.setup("loadParams", 20, 20));
-    //        guiRW.add(regNum.setup("regNum0", 0, 0, 4));
     guiRW.add(r1.setup("r1", 20, 20));
-    //        guiRW.add(r2.setup("r2", 20, 20));
-    //        guiRW.add(r3.setup("r3", 20, 20));
-    //        guiRW.add(r4.setup("r4", 20, 20));
-    //        guiRW.add(r5.setup("r5", 20, 20));
     guiRW.add(w1.setup("w1", 20, 20));
-    //        guiRW.add(w2.setup("w2", 20, 20));
-    //        guiRW.add(w3.setup("w3", 20, 20));
-    //        guiRW.add(w4.setup("w4", 20, 20));
-    //        guiRW.add(w5.setup("w5", 20, 20));
-    //        guiRW.add(subFreq1.setup("subFreq10", 50.0, 20.0, 10000.0));
-    //        guiRW.add(subFreq2.setup("subFreq20", 50.0, 20.0, 10000.0));
     guiRW.add(pole1Freq.setup("pole1Freq0", 100, 20, 1000));
     guiRW.add(pole2Freq.setup("pole2Freq0", 1500, 1001, 2000));
     guiRW.add(pole3Freq.setup("pole3Freq0", 2500, 2001, 3000));
@@ -135,7 +90,6 @@ void avObject::avSetup(std::string &textureFile){
     guiRW.add(subEnv2CV.setup("subEnv2CV0", 1, 0, 100));
     
     //************** Audio Setup ****************//
-    
     hpc = 0;
     lpc = 0;
     hp = 0;
@@ -162,42 +116,7 @@ void avObject::avSetup(std::string &textureFile){
     subADSR2.setRelease(rel2);
     
     //*************** Visual Setup ****************//
-    
     cubeShader.load("noise_light_bump_shader");
-    
-    //    furthestPoint = ofVec3f(ofGetWindowWidth(), ofGetWindowHeight(), cam.getFarClip());
-    
-    //    ofFbo::Settings settings;
-    //    settings.width = ofGetWindowWidth();
-    //    settings.height = ofGetWindowHeight();
-    //    settings.useDepth = true;
-    //    settings.internalformat = GL_RGBA;
-    //    settings.maxFilter = GL_LINEAR, GL_NEAREST;
-    //    settings.numSamples = 4;
-    //    settings.numColorbuffers = 3;
-    //    settings.useStencil = false;
-    //
-    //    ofFbo::Settings settings2;
-    //    settings2.width = ofGetWindowWidth();
-    //    settings2.height = ofGetWindowHeight();
-    //    settings2.useDepth = true;
-    //    settings2.internalformat = GL_RGBA;
-    //    settings2.maxFilter = GL_LINEAR, GL_NEAREST;
-    //    settings2.numSamples = 4;
-    //    settings2.numColorbuffers = 3;
-    //    settings2.useStencil = false;
-    //
-    //    fbo1.allocate(settings);
-    //    fbo1.begin();
-    //    ofClear(0, 0, 0, 50);
-    //    fbo1.end();
-    //
-    //    fbo2.allocate(settings2);
-    //    fbo2.begin();
-    //    ofClear(0, 0, 0, 50);
-    //    fbo2.end();
-    //    blurX.load("shaders/blurX");
-    //    blurY.load("shaders/blurY");
     
     result = false;
     isTrained = false;
@@ -208,59 +127,8 @@ void avObject::avSetup(std::string &textureFile){
     box2.rotate(45, axis);
     box3.tilt(45);
     box3.rotate(45, oppositeDirectionAxis);
-    
 }
 
-//void avObject::camAndLights(){
-//
-////*************** GUI Setup ******************//
-//
-//camGui.setup();
-//camGui.setPosition(0, ofGetWindowHeight() * .1);
-//camGui.add(camX.setup("camX", 0.0f, -1.0f, 1.0f));
-//camGui.add(camY.setup("camY", 0.0f, -1.0f, 1.0f));
-//camGui.add(camZ.setup("camZ", 0.0f, -1.0f, 1.0f));
-//
-//lightGui.setup();
-//lightGui.setPosition(0, ofGetWindowHeight()*0.6);
-//lightGui.add(lightColR.setup("lightColR", 1.f, 0.f, 1.f));
-//lightGui.add(lightColG.setup("lightColG", 1.f, 0.f, 1.f));
-//lightGui.add(lightColB.setup("lightColB", 1.f, 0.f, 1.f));
-//lightGui.add(ambColR.setup("ambColR", 0.1f, 0.f, 1.f));
-//lightGui.add(ambColG.setup("ambColG", 0.1f, 0.f, 1.f));
-//lightGui.add(ambColB.setup("ambColB", 0.1f, 0.f, 1.f));
-//lightGui.add(specColR.setup("specColR", 0.1f, 0.f, 1.f));
-//lightGui.add(specColG.setup("specColG", 0.1f, 0.f, 1.f));
-//lightGui.add(specColB.setup("specColB", 0.1f, 0.f, 1.f));
-//lightGui.add(lightPow.setup("lightPow", 397000.f, 100000.f, 10000000.f));
-//lightGui.add(lightPosX.setup("lightPosX", 0.f, -1000.f, 1000.f));
-//lightGui.add(lightPosY.setup("lightPosY", 0.f, -1000.f, 1000.f));
-//lightGui.add(lightPosZ.setup("lightPosZ", -780.f, -1000.f, 1000.f));
-//lightGui.add(blurAmnt.setup("blurAmnt", .001f, 0.f, .01f));
-//
-//}
-
-//void avObject::updateGlobalParams(float *paramPtr){
-//
-//    camX = *(paramPtr);
-//    camY = *(paramPtr+1);
-//    camZ = *(paramPtr+2);
-//    lightColR = *(paramPtr+3);
-//    lightColG = *(paramPtr+4);
-//    lightColB = *(paramPtr+5);
-//    ambColR = *(paramPtr+6);
-//    ambColG = *(paramPtr+7);
-//    ambColB = *(paramPtr+8);
-//    specColR = *(paramPtr+9);
-//    specColG = *(paramPtr+10);
-//    specColB = *(paramPtr+11);
-//    lightPow = *(paramPtr+12);
-//    lightPosX = *(paramPtr+13);
-//    lightPosY = *(paramPtr+14);
-//    lightPosZ = *(paramPtr+15);
-//    blurAmnt = *(paramPtr+16);
-//
-//}
 void avObject::visual (const unsigned int triggerValue, float* moveModelView, float* camModelViewMatPtr, ofVec3f camPos, ofVec3f lightPos){
     
     if(size >= 1050){
@@ -270,16 +138,13 @@ void avObject::visual (const unsigned int triggerValue, float* moveModelView, fl
     }
     
     trigger = triggerValue;
-    
     float objPosX = ofMap(xTrans, -1.f, 1.f, -ofGetWindowWidth(), ofGetWindowWidth());
     float objPosY = ofMap(yTrans, -1.f, 1.f, -ofGetWindowHeight(), ofGetWindowHeight());
     float objPosZ = ofMap(zTrans, -1.f, 1.f, 1.f, 1000.f);
     ofVec3f objectPositionVector = ofVec3f(objPosX, objPosY, objPosZ);
-    
-#ifdef PSMOVE_ON
+
     //************** Size to Trigger Map ***********//
     unsigned int sizeVal = 1050 - size;
-    
     unsigned int additionalSizeVal = ofMap(triggerValue, 0, 255, 0, sizeVal);
     
     if(additionalSizeVal >= 1000){
@@ -297,31 +162,15 @@ void avObject::visual (const unsigned int triggerValue, float* moveModelView, fl
     }
     
     camModelViewMat.set(camModelViewMatPtr);
-//    controllerModelViewMatrix.set(moveModelView);
-    //        cameraSpace = cam.getModelViewMatrix();
-//    camModelViewMat.postMult(controllerModelViewMatrix);
     camModelViewMat.glTranslate(objectPositionVector);
-#endif
-    
-#ifdef PSMOVE_OFF
-    shapeSize = size;
-    cameraSpace = cam.getModelViewMatrix();
-#endif
-    
-    //******* object RGB colour and Brightness to map to freq *******//
-    
-//    objectRGB_col = ofColor(texR, texG, texB, texA);
-//    objectLightness = objectRGB_col.getLightness();
-//    lightness_freq_map = ofMap((int) objectLightness, 0, 255, 0, 512);
     
     //***** object sound level related to dist from camera and size ****//
-    
     const double soundPowerThresh = 0.000000000001;
     soundPower = ofMap(shapeSize, 50, 1050, soundPowerThresh, 0.01);
     objPos = ofVec3f(xTrans, yTrans, zTrans) * camModelViewMat;
     ofVec3f absCamPos = ofVec3f(abs(camPos.x), abs(camPos.y), abs(camPos.z));
-    //*** distance between object and camera
     
+    //*** distance between object and camera
     dist = absCamPos.distance(objPos);
     if(dist <= shapeSize){
         dist = shapeSize;
@@ -332,15 +181,6 @@ void avObject::visual (const unsigned int triggerValue, float* moveModelView, fl
     dbVal = abs(10*log10f(logCalc));
     mappedVol = ofMap(dbVal, 0.f, 100.f, 0.f, 1.f);
     
-    //************** Texture Colour **************//
-    
-//            texColR = texR;
-//            texColG = texG;
-//            texColB = texB;
-//            texColA = texA;
-    
-//    if(shape == 0){
-    
     box.set(shapeSize);
     box.setResolution(vertices);
     
@@ -350,49 +190,11 @@ void avObject::visual (const unsigned int triggerValue, float* moveModelView, fl
     box3.set(shapeSize);
     box3.setResolution(vertices);
     
-        
-//    } else if(shape == 1){
-    
-        /********* Sphere ***********/
-        
-//        sphere.setRadius(shapeSize * 0.2);
-//        sphere.setResolution(vertices * 0.5);
-//    }
-    
     speed = noiseFreq.phasor(noiseSpeed, 1, 9);
-    
-//            if(texType){
-//
-//    float noiseSpeedToAngleMap = ofMap(noiseSpeed, 0, 1000, 0, 180);
-//    for(int k = 0; k < 512 * 512 * 4; k+=4){
-//        texData[k+0] = texColR;// * sin(k * noiseSpeedToAngleMap * PI/180);
-//        texData[k+1] = texColG;// * sin(k * noiseSpeedToAngleMap * PI/180);
-//        texData[k+2] = texColB;// * sin(k * noiseSpeedToAngleMap * PI/180);
-//        texData[k+3] = texColA;
-//    }
-//
-//    texPtr = &texData[0];
-//    tex.loadData(texPtr, 512, 512, GL_RGBA);
-//
-//    box.mapTexCoordsFromTexture(tex);
-//    box2.mapTexCoordsFromTexture(tex);
-//    box3.mapTexCoordsFromTexture(tex);
-//    sphere.mapTexCoordsFromTexture(tex);
-    
-//            } else if(!texType){
+
     box.mapTexCoordsFromTexture(img.getTexture());
     box2.mapTexCoordsFromTexture(img.getTexture());
     box3.mapTexCoordsFromTexture(img.getTexture());
-//    sphere.mapTexCoordsFromTexture(img.getTexture());
-//            }
-    
-    //    fbo1.begin();
-    //    ofClear(0, 0, 0, 0);
-    //    fbo1.end();
-    //
-    //    fbo2.begin();
-    //    ofClear(0, 0, 0, 0);
-    //    fbo2.end();
     
     for(int i = 0; i < NUMLIGHTS; i++){
         float angle = (i / (NUMLIGHTS / 2)) * PI;
@@ -401,77 +203,14 @@ void avObject::visual (const unsigned int triggerValue, float* moveModelView, fl
         lights[i].setPosition(lightPos.x * x * i, lightPos.x * y * i, lightPos.z * x * i);
         globalLightPos[i] = ofVec4f(lights[i].getGlobalPosition().x, lights[i].getGlobalPosition().y, lights[i].getGlobalPosition().z, 1.);
     }
-    
-    //    size = shapeSize;
-    
-    //    lightCol = ofVec3f(lightColR, lightColG, lightColB);
-    //    ambCol = ofVec3f(ambColR, ambColG, ambColB);
-    //    specCol = ofVec3f(specColR, specColG, specColB);
-    
 }
 
 void avObject::drawVisual(ofVec3f lightCol, ofVec3f ambCol, ofVec3f specCol, float lightPow){
-    
-    //    ofEnableDepthTest();
-    //
-    //    fbo1.begin();
-    //
-    //    float xPos = ofGetWindowWidth() * camX;
-    //    float yPos = ofGetWindowHeight() * camY;
-    //    float zPos = ofGetWindowHeight() * camZ;
-    //
-    //    ofVec3f lookAtPos;
-    //    camPos = ofVec3f(xPos, yPos, zPos);
-    //
-    //    lookAtPos = ofVec3f(0, 0, 0);
-    //    cam.setPosition(camPos);
-    //
-    //    cam.lookAt(lookAtPos, ofVec3f(0, 1, 0));
-    //
-    //    cam.setFov(90);
-    //    cam.setNearClip(1);
-    //    cam.setFarClip(5000);
-    //
-    //    cam.begin();
-    
-//    if(shape == 0){
-        //            if(wireFrame){
-        //
-        //                cubeShader.begin();
-        //                ofPushMatrix();
-        //#ifdef PSMOVE_ON
-        //                ofLoadMatrix(cameraSpace);
-        //#endif
-        //
-        //                for(int j = 0; j < NUMLIGHTS; j++){
-        //                    cameraSpaceLightPos[j] = cameraSpace * globalLightPos[j];
-        //                    cubeShader.setUniform4f("cameraSpaceLightPos", cameraSpaceLightPos[j]);
-        //                }
-        //                cubeShader.setUniform1f("speed", speed);
-        //                cubeShader.setUniform1f("displacementHeight", dispH);
-        //                cubeShader.setUniform1f("pulse", visPulse);
-        //                cubeShader.setUniform3f("lightCol", lightCol);
-        //                cubeShader.setUniform3f("ambCol", ambCol);
-        //                cubeShader.setUniform3f("specCol", specCol);
-        //                cubeShader.setUniform1f("lightPow", lightPow);
-        //                cubeShader.setUniform1f("brightness", brightness);
-        //                box.drawWireframe();
-        //                ofPopMatrix();
-        //                cubeShader.end();
-        //
-        //            } else if(!wireFrame){
-        
-//                        if(texType){
-//        tex.bind();
-//                        } else if(!texType){
-                            img.getTexture().bind();
-//                        }
+
+        img.getTexture().bind();
         cubeShader.begin();
         ofPushMatrix();
-#ifdef PSMOVE_ON
         ofLoadMatrix(camModelViewMat);
-#endif
-        
         cubeShader.setUniformTexture("normMap", normMap, 1);
         for(int j = 0; j < NUMLIGHTS; j++){
             cameraSpaceLightPos[j] = camModelViewMat * globalLightPos[j];
@@ -488,132 +227,30 @@ void avObject::drawVisual(ofVec3f lightCol, ofVec3f ambCol, ofVec3f specCol, flo
         box.draw();
         box2.draw();
         box3.draw();
-//        sphere.draw();
-//        box.setPosition(objPosX, objPosY, objPosZ);
         ofPopMatrix();
         cubeShader.end();
-//                        if(texType){
-//        tex.unbind();
-//                        } else if(!texType){
-                            img.getTexture().unbind();
-//                        }
-        //            }
-        
-//    } else if(shape == 1){
-        //            if(wireFrame){
-        //
-        //                cubeShader.begin();
-        //                ofPushMatrix();
-        //#ifdef PSMOVE_ON
-        //                ofLoadMatrix(cameraSpace);
-        //#endif
-        //
-        //                for(int j = 0; j < NUMLIGHTS; j++){
-        //                    cameraSpaceLightPos[j] = cameraSpace * globalLightPos[j];
-        //                    cubeShader.setUniform4f("cameraSpaceLightPos", cameraSpaceLightPos[j]);
-        //                }
-        //                cubeShader.setUniform1f("speed", speed);
-        //                cubeShader.setUniform1f("displacementHeight", dispH);
-        //                cubeShader.setUniform1f("pulse", visPulse);
-        //                cubeShader.setUniform3f("lightCol", lightCol);
-        //                cubeShader.setUniform3f("ambCol", ambCol);
-        //                cubeShader.setUniform3f("specCol", specCol);
-        //                cubeShader.setUniform1f("lightPow", lightPow);
-        //                cubeShader.setUniform1f("brightness", brightness);
-        //                sphere.drawWireframe();
-        //                ofPopMatrix();
-        //                cubeShader.end();
-        //
-        //            } else if(!wireFrame){
-        //
-        //                if(texType){
-//        tex.bind();
-        //                } else if(!texType){
-        //                    img.getTexture().bind();
-        //                }
-//        cubeShader.begin();
-//        ofPushMatrix();
-//#ifdef PSMOVE_ON
-//        ofLoadMatrix(camModelViewMat);
-//#endif
-//
-//        cubeShader.setUniformTexture("normMap", normMap, 1);
-//        for(int j = 0; j < NUMLIGHTS; j++){
-//            cameraSpaceLightPos[j] = camModelViewMat * globalLightPos[j];
-//            cubeShader.setUniform4f("cameraSpaceLightPos", cameraSpaceLightPos[j]);
-//        }
-//        cubeShader.setUniform1f("speed", speed);
-//        cubeShader.setUniform1f("displacementHeight", dispH);
-//        cubeShader.setUniform1f("pulse", visPulse);
-//        cubeShader.setUniform3f("lightCol", lightCol);
-//        cubeShader.setUniform3f("ambCol", ambCol);
-//        cubeShader.setUniform3f("specCol", specCol);
-//        cubeShader.setUniform1f("lightPow", lightPow);
-//        cubeShader.setUniform1f("brightness", brightness);
-//        sphere.draw();
-//        sphere.setPosition(objPosX, objPosY, objPosZ);
-//        ofPopMatrix();
-//        cubeShader.end();
-        //                if(texType){
-//        tex.unbind();
-        //                } else if(!texType){
-        //                    img.getTexture().unbind();
-        //                }
-        //            }
-//    }
-    
-    
-    //    cam.end();
-    //
-    //    fbo1.end();
-    //
-    //    fbo1.getTexture().bind();
-    //    fbo2.begin();
-    //    blurX.begin();
-    //    blurX.setUniform1f("blurAmnt", blurAmnt);
-    //    fbo1.draw(0, 0, ofGetWindowWidth(), ofGetWindowHeight());
-    //    blurX.end();
-    //    fbo2.end();
-    //    fbo1.getTexture().unbind();
-    //
-    //    fbo2.getTexture().bind();
-    //    blurY.begin();
-    //    blurY.setUniform1f("blurAmnt", blurAmnt);
-    //    fbo2.draw(0, 0, ofGetWindowWidth(), ofGetWindowHeight());
-    //    blurY.end();
-    //    fbo2.getTexture().unbind();
-    
+        img.getTexture().unbind();
 }
 
 double * avObject::audio(float blur){
     
-    
-    
-    /********* FM Synth ****************/
-    
+    //********* FM Synth ****************//
     ampEnv.setAttack(attack);
     ampEnv.setDecay(decay);  // Needs to be at least 1
     ampEnv.setSustain(sustain);
     ampEnv.setRelease(release);
     
-    delColl = 0;
     filteredSig = 0;
     
-    /*** Oscillators ***/
-    
+    //*** Oscillators ***//
     double anotherLfoVal = anotherLfo.sinewave(phase.phasor(20));
     double lfoModHarmonicity = harmRatio * anotherLfoVal;
     double lfoModAmp = lfoModHarmonicity * ((modInd * 2) * anotherLfoVal);
     double lfoModulator = lfoModulatorOscil.triangle(lfoModHarmonicity) * lfoModAmp;
     
     lfo = lfOsc.sinewave(lfoFreq);
-//    if(waveform == 3){
-//        harmonicity = oscilFreq * ((harmRatio * 0.1) * lfo); //higher end harm ratio value was causing spike in saw wave amp
-//    } else {
-        harmonicity = oscilFreq * (harmRatio * lfo);
-//    }
+    harmonicity = oscilFreq * (harmRatio * lfo);
     modAmp = harmonicity * (modInd * lfo);
-    
     modulator = mod.sinewave(harmonicity + lfoModulator) * modAmp;
     
     switch (waveform){
@@ -645,15 +282,6 @@ double * avObject::audio(float blur){
             subSig1 = (((square1 + square2 + square3 + square4) * 0.25) * mappedVol);
             break;
         }
-        case 3 :{
-            
-//            saw1 = sawOsc1.saw(oscilFreq + modulator);
-//            saw2 = (sawOsc2.saw(oscilFreq * 0.2) + saw1) / 2;
-//            saw3 = (sawOsc3.saw(oscilFreq * 0.3) + saw2) / 2;
-//            saw4 = (sawOsc4.saw(oscilFreq * 0.5) + saw3) / 2;
-//            subSig1 = ((saw1 + saw2 + saw3 + saw4) / 4) * (oscilAmp * mappedVol);
-            break;
-        }
     }
     
     subADSR1.setAttack(a1);
@@ -675,9 +303,9 @@ double * avObject::audio(float blur){
         envelopedBassSig[i] = bass[i] * bassEnv[i].adsr(1., 1);
         bassSig += envelopedBassSig[i];
     }
+    
     bassSig *= 0.05;
     subSig1 += bassSig;
-    //            subSig1 = subOsc1.square(subFreq1);
     sympathetic1Osc1Out = subOsc1sympathetic1.square(oscilFreq / 2);
     subSig2 = subSig1 * lfo;
     sympathetic1Osc2Out = subOsc2sympathetic1.square(oscilFreq / 3);
@@ -717,7 +345,7 @@ double * avObject::audio(float blur){
     
     sigMix = (subOut + subSig1) * mappedVol;
     
-    /*** Filters & Envelopes ***/
+    //*** Filters & Envelopes ***//
     
     hiPass = noiseFiltHi.hipass(sigMix, noiseFiltHiCut);
     
@@ -744,52 +372,37 @@ double * avObject::audio(float blur){
     }
     
     amplitudeEnvelope=ampEnv.adsr(1.,ampEnv.trigger);
-    
-    
     envOutput = filteredSig * amplitudeEnvelope;
     
     //***** Granular Module ****//
     
-    gran->setLoopStart(44100);
-    gran->setLoopEnd(88200);
-    grainLength = ofMap(shapeSize, 50, 1050, 0.03, 0.3);
-    grainSpeed = ofMap(vertices, 0, 33, 0.0, 4.0);
-
-    grainSig = gran->play(0.75, grainSpeed, grainLength, 4, 0);
-
-    granVol = ofMap(shapeSize, 50, 1050, 0.0, 1.0);
-    grainSig *= granVol;
+//    gran->setLoopStart(44100);
+//    gran->setLoopEnd(88200);
+//    grainLength = ofMap(shapeSize, 50, 1050, 0.03, 0.3);
+//    grainSpeed = ofMap(vertices, 0, 33, 0.0, 4.0);
+//
+//    grainSig = gran->play(0.75, grainSpeed, grainLength, 4, 0);
+//
+//    granVol = ofMap(shapeSize, 50, 1050, 0.0, 1.0);
+//    grainSig *= granVol;
     
-    outSig = ((envOutput + grainSig) * 0.5) * mappedVol;
+//    outSig = ((envOutput + grainSig) * 0.5) * mappedVol;
+    outSig = envOutput * mappedVol;
     
-    /*** Delay ***/
-    
-    
-    //    for(int j=0; j<NUMTAPS; ++j){
+    //*** Delay ***//
     delBoy = delay.dl(outSig, 410 , 0.8);
-    //        delColl += delBoy[j] / NUMTAPS;
-    //    }
-    //    delColl = delColl / NUMTAPS;
-    //    float delayAmount = delBoy * blurToDelayMap;
-    
-    //    double dryAndWetSig = filteredSig + delBoy;
     
     //*** Output ***//
     float blurToHiPassFiltMap = ofMap(blur, 0.0, 0.01, 1.0, 0.0);
     finalSigFilteredThroughBlurMap = globalLowPass.lopass(delBoy, blurToHiPassFiltMap);
-    
-    
     multiOut = &finalSigFilteredThroughBlurMap;
     return multiOut;
-    
 }
 
 double * avObject::panner(){
     
     objPos_camSpace = ofVec4f(xTrans, yTrans, zTrans, 1) * camModelViewMat;
-    
     objPos_asPercentage_ofX_axis = ofMap(objPos_camSpace.x, -1440, 1440, 0.f, 1.f);
-    
     panOut = &objPos_asPercentage_ofX_axis;
     return panOut;
 }
@@ -830,10 +443,7 @@ void avObject::randomParams(){
         vertices = 33;
     }
     
-//    shape = rand() % 2;
-    
     //************ Random Audio ****************//
-    
     lfoFreq = abs(50 * distribution(generator));
     
     harmRatio = abs(100 * distribution(generator));
@@ -891,10 +501,6 @@ void avObject::randomParams(){
     if (release <= 1){
         release = 1;
     }
-    
-    //        subFreq1 = ofRandom(20, 10000);
-    
-    //        subFreq2 = ofRandom(20, 10000);
     
     pole1Freq = ofRandom(20, 1000);
     
@@ -983,44 +589,20 @@ void avObject::randomParams(){
     
 }
 
-/*
- Sends parameters into Neural network
- Position float x, float y, float z
- Returns void
- */
-
 void avObject::trainingExamples(float x, float y, float z){
     
     rapidlib::trainingExample tempExample;
-    
-//    if(x > 5.0){
-//        x = 5.0;
-//    } else if(x < -5.0){
-//        x = -5.0;
-//    }
-//
-//    if(y > 4.0){
-//        y = 4.0;
-//    } else if(y < -4.0){
-//        y = -4.0;
-//    }
-//
-//    if(z < -40.0){
-//        z = -40.0;
-//    }
     
     tempExample.input = {(double) x, (double) y, (double) z};
     
     tempExample.output = {(double) noiseSpeed, (double) dispH, (double) visPulse, (double) size, (double) vertices, (double) oscilFreq, (double) oscilAmp, (double) lfoFreq, (double) harmRatio, (double) modInd, (double) controlVoltage, (double) pulseDuty, (double) noiseFiltLowCut, (double) noiseFiltHiCut, (double) cf, (double) q, (double) res, (double) attack, (double) decay, (double) sustain, (double) release, (double) pole1Freq, (double) pole2Freq, (double) pole3Freq, (double) pole4Freq, (double) pole1res, (double) pole2res, (double) pole3res, (double) pole4res, (double) a1, (double) d1, (double) s1, (double) rel1, (double) a2, (double) d2, (double) s2, (double) rel2, (double) subEnv1CV, (double) subEnv2CV};
 
     trainingSet.push_back(tempExample);
-
 }
 
 bool avObject::trainModel(){
     
     result = reg.train(trainingSet);
-    
     return result;
 }
 
@@ -1028,22 +610,6 @@ void avObject::trainedOutput(float x, float y, float z){
     
     std::vector<double> input;
     std::vector<double> output;
-    
-//    if(x > 5.0){
-//        x = 5.0;
-//    } else if(x < -5.0){
-//        x = -5.0;
-//    }
-//    
-//    if(y > 4.0){
-//        y = 4.0;
-//    } else if(y < -4.0){
-//        y = -4.0;
-//    }
-//    
-//    if(z < -40.0){
-//        z = -40.0;
-//    }
     
     input.push_back ((double)x);
     input.push_back ((double)y);
@@ -1271,37 +837,32 @@ void avObject::trainedOutput(float x, float y, float z){
     if (output[38] < 1){
         subEnv2CV = 1;
     }
-    
 }
 
 bool avObject::readWrite(){
     
     if(saveParams) {
-        gui.saveToFile("/Users/bryandunphy/Documents/code/of_v0.9.8_osx_release/apps/myApps/regMap/bin/data/ventriloquy2/2ndDraft_180409/vent2_reg0_obj4_mainGui.xml");
-        guiRW.saveToFile("/Users/bryandunphy/Documents/code/of_v0.9.8_osx_release/apps/myApps/regMap/bin/data/ventriloquy2/2ndDraft_180409/vent2_reg0_obj4_guiRW.xml");
+        gui.saveToFile("data/ventriloquy2/2ndDraft_180409/vent2_reg0_obj4_mainGui.xml");
+        guiRW.saveToFile("data/ventriloquy2/2ndDraft_180409/vent2_reg0_obj4_guiRW.xml");
     }
     
-    if(r1) {isTrained = reg.readJSON("/Users/bryandunphy/Documents/code/of_v0.9.8_osx_release/apps/myApps/regMap/bin/data/ventriloquy2/1stDraft_180403/trainedModels/Vent2_1stDraft_Reg2.JSON");}
+    if(r1) {isTrained = reg.readJSON("data/ventriloquy2/1stDraft_180403/trainedModels/Vent2_1stDraft_Reg2.JSON");}
     
-    if(w1) {reg.writeJSON("/Users/bryandunphy/Documents/code/of_v0.9.8_osx_release/apps/myApps/regMap/bin/data/ventriloquy2/2ndDraft_180409/trainedModels/Vent2_2ndDraft_Reg0.JSON");}
+    if(w1) {reg.writeJSON("data/ventriloquy2/2ndDraft_180409/trainedModels/Vent2_2ndDraft_Reg0.JSON");}
     
     return isTrained;
-    
 }
 
 void avObject::loadExamples(const int objNum){
     
-    gui.loadFromFile("/Users/bryandunphy/Documents/code/of_v0.9.8_osx_release/apps/myApps/regMap/bin/data/ventriloquy2/2ndDraft_180409/section0/vent2_reg0_obj"+ofToString(objNum)+"_mainGui.xml");
-    guiRW.loadFromFile("/Users/bryandunphy/Documents/code/of_v0.9.8_osx_release/apps/myApps/regMap/bin/data/ventriloquy2/2ndDraft_180409/section0/vent2_reg0_obj"+ofToString(objNum)+"_guiRW.xml");
-    
+    gui.loadFromFile("data/ventriloquy2/2ndDraft_180409/section0/vent2_reg0_obj"+ofToString(objNum)+"_mainGui.xml");
+    guiRW.loadFromFile("data/ventriloquy2/2ndDraft_180409/section0/vent2_reg0_obj"+ofToString(objNum)+"_guiRW.xml");
 }
 
 void avObject::drawGuiAndGuiRW(){
     
     ofDisableDepthTest();
-    
     gui.draw();
     guiRW.draw();
-    
 }
 

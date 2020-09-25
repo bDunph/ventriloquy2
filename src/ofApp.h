@@ -1,4 +1,8 @@
 #pragma once
+#define PREPMODE 0
+#define PERFORMANCEMODE 1
+#define NUMAVS 3
+#define PORT 8000
 
 #include <ofMain.h>
 #include <ofxMaxim.h>
@@ -6,28 +10,12 @@
 #include <ofxGui.h>
 #include <ofxXmlSettings.h>
 #include <ofxMidi.h>
-
 #include <stdio.h>
-
 #include <time.h>
 #include <assert.h>
-
-//#include "ofxSyphon.h"
-//#include "ofxCv.h"
-//#include "ofxOpenCv.h"
-//#include "opencv2/core/core_c.h"
-//#include "opencv2/highgui/highgui_c.h"
-
 #include "avObject.hpp"
-//#include "psMoveTrackerClass.hpp"
 #include "controller.hpp"
-
-//#define PREPMODE 3
-//#define PERFORMANCEMODE 5
-#define NUMAVS 3
-//#define PSMOVE_ON 1
-//#define PSMOVE_OFF 2
-#define PORT 8000
+//#include "ofxSyphon.h"
 
 class ofApp : public ofBaseApp {
     
@@ -36,14 +24,7 @@ public:
     void exit();
     void update();
     void draw();
-    void globalRandParams();
-    //******** Maxim **********//
     void audioOut(float * output, int bufferSize, int nChannels);
-    
-    
-    void globalReadWrite();
-    void globalLoadExamples(int objectNumber);
-    
     void keyPressed(int key);
     void keyReleased(int key);
     void mouseMoved(int x, int y );
@@ -98,9 +79,9 @@ public:
     ofShader blurY;
     ofVec3f camPos;
     ofMatrix4x4 cameraSpace;
-    //*********** Maxim *****************//
     
-//#ifdef PREPMODE
+    //*********** Audio *****************//
+#if PREPMODE
     maxiMix prepMix;
     double* synthOutPrep;
     double prepChannel;
@@ -111,38 +92,21 @@ public:
     bool loaded;
     bool trained;
     bool recording;
-//#endif
+#endif
     
     double sampleRate, bufferSize;
 
-    
-//#ifdef PERFORMANCEMODE
-
+#if PERFORMANCEMODE
     double* synthOut[NUMAVS];
     double* panning[NUMAVS];
     double channel[NUMAVS];
     double panner[NUMAVS];
     maxiMix channelMix[NUMAVS];
     double channelOut[NUMAVS][2];
-    
     avObject av[NUMAVS];
-
-//#endif
+#endif
 
     double finalSig[2];
-    double fullSig;
-    
-    maxiEnv lim;
-    bool limTrig;
-    double envSig;
-    
-//#ifdef PSMOVE_ON
-    
-    //********** PS Move ***********//
-    
-//    psMoveTrackerClass tracker;
-    
-//#endif
     
     controller controller;
     ofVec3f* camXyzValsPtr;
@@ -157,11 +121,6 @@ public:
     std::string jpgTexture3;
     
     unsigned int triggerVal = 0;
-    float wOrient = 0;
-//    bool keyboardDrawInterface;
-    bool keyboardCntrlObj1;
-    bool keyboardCntrlObj2;
-    bool keyboardCntrlObj3;
     ofMatrix4x4 idMatrix;
     float* idMatDataPtr;
     int blurToFilterMap;

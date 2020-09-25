@@ -165,6 +165,8 @@ void avObject::visual (const unsigned int triggerValue, float* moveModelView, fl
     camModelViewMat.glTranslate(objectPositionVector);
     
     //***** object sound level related to dist from camera and size ****//
+    // calculations based on this article 
+    // https://community.sw.siemens.com/s/article/sound-pressure-sound-power-and-sound-intensity-what-s-the-difference
     const double soundPowerThresh = 0.000000000001;
     soundPower = ofMap(shapeSize, 50, 1050, soundPowerThresh, 0.01);
     objPos = ofVec3f(xTrans, yTrans, zTrans) * camModelViewMat;

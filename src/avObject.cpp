@@ -8,14 +8,6 @@
 #include <avObject.hpp>
 
 void avObject::avSetup(std::string &textureFile){
-//    delete gran;
-    
-//    sample1.clear();
-//    sample1.load(ofToDataPath("samples/lowRumbleLoop.wav"));
-//    samp = sample1;
-//    gran = new maxiTimePitchStretch<grainPlayerWin, maxiSample>(&samp);
-//    grainSpeed = 1.f;
-//    grainLength = 0.05f;
     
     ofBackground(0);
     ofSetVerticalSync(true);
@@ -296,18 +288,6 @@ double * avObject::audio(float blur){
     subADSR2.setSustain(s2);
     subADSR2.setRelease(rel2);
     
-    for(int i = 0; i < SOUNDWAVES; i++){
-        bassEnv[i].setAttack(10 + (10 * i));
-        bassEnv[i].setDecay(30 + (10 * i));
-        bassEnv[i].setSustain(20 + (10 * i));
-        bassEnv[i].setRelease(70 + (10 * i));
-        bass[i] = bassOsc[i].saw((oscilFreq * 0.1) + (3 * i));
-        envelopedBassSig[i] = bass[i] * bassEnv[i].adsr(1., 1);
-        bassSig += envelopedBassSig[i];
-    }
-    
-    bassSig *= 0.05;
-    subSig1 += bassSig;
     sympathetic1Osc1Out = subOsc1sympathetic1.square(oscilFreq / 2);
     subSig2 = subSig1 * lfo;
     sympathetic1Osc2Out = subOsc2sympathetic1.square(oscilFreq / 3);
@@ -375,20 +355,6 @@ double * avObject::audio(float blur){
     
     amplitudeEnvelope=ampEnv.adsr(1.,ampEnv.trigger);
     envOutput = filteredSig * amplitudeEnvelope;
-    
-    //***** Granular Module ****//
-    
-//    gran->setLoopStart(44100);
-//    gran->setLoopEnd(88200);
-//    grainLength = ofMap(shapeSize, 50, 1050, 0.03, 0.3);
-//    grainSpeed = ofMap(vertices, 0, 33, 0.0, 4.0);
-//
-//    grainSig = gran->play(0.75, grainSpeed, grainLength, 4, 0);
-//
-//    granVol = ofMap(shapeSize, 50, 1050, 0.0, 1.0);
-//    grainSig *= granVol;
-    
-//    outSig = ((envOutput + grainSig) * 0.5) * mappedVol;
     outSig = envOutput * mappedVol;
     
     //*** Delay ***//

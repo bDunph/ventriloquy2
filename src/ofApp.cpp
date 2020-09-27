@@ -108,8 +108,8 @@ void ofApp::setup(){
     av[2].avSetup(jpgTexture3);
     
     for(int i = 0; i < NUMAVS; i++){
-av[i].gui.loadFromFile("ventriloquy2/2ndDraft_180409/section"+ofToString(i)+"/vent2_reg"+ofToString(i)+"_obj1_mainGui.xml");
-av[i].guiRW.loadFromFile("ventriloquy2/2ndDraft_180409/section"+ofToString(i)+"/vent2_reg"+ofToString(i)+"_obj1_guiRW.xml");
+av[i].gui.loadFromFile("ventriloquy2/2ndDraft_180409/section"+ofToString(i)+"/vent2_reg"+ofToString(i)+"_obj4_mainGui.xml");
+av[i].guiRW.loadFromFile("ventriloquy2/2ndDraft_180409/section"+ofToString(i)+"/vent2_reg"+ofToString(i)+"_obj4_guiRW.xml");
 //av[i].reg.readJSON("data/ventriloquy2/2ndDraft_180409/trainedModels/Vent2_2ndDraft_Reg"+ofToString(i)+"_new.JSON");
     }
 #endif

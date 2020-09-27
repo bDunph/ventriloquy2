@@ -179,14 +179,6 @@ private:
     maxiFilter loRes;
     maxiEnv ampEnv;
     maxiDelayline delay;
-    
-    //maxiTimePitchStretch<grainPlayerWin, maxiSample> *gran;
-    //maxiTimePitchStretch<grainPlayerWin, maxiSample> *gran1, *gran2;
-//    double granVol;
-//    double grainSpeed;
-//    double grainLength;
-//    double grainSig;
-//    double grainSig1;
 
     double modulator;
     double harmonicity;
@@ -228,13 +220,6 @@ private:
     double sine2;
     double sine3;
     double sine4;
-    double bass[SOUNDWAVES];
-    double bassSig;
-    maxiEnv bassEnv[SOUNDWAVES];
-    double bassEnvTrig[SOUNDWAVES];
-    maxiOsc bassEnvPhasor[SOUNDWAVES];
-    double envelopedBassSig[SOUNDWAVES];
-    maxiOsc bassOsc[SOUNDWAVES];
     
     double saw1;
     double saw2;
